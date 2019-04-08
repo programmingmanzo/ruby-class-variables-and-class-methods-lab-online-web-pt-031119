@@ -37,7 +37,7 @@ class Song
     @@genres.each do |genre|
       if genre_count[genre]
         genre_count[genre] += 1
-        binding.pry 
+        #binding.pry 
       else
         genre_count[genre] = 1 
       end
@@ -55,7 +55,7 @@ class Song
     @@artists.each do |artist|
       if artist_count[artist]
         artist_count[artist] += 1 
-        binding.pry 
+        #binding.pry 
       else 
         artist_count[artist] = 1 
       end 
