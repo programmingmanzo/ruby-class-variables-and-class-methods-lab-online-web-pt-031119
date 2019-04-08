@@ -11,20 +11,13 @@ class Song
   def initialize(name, artist, genre)
     @@count += 1 
     @genre = genre 
+    @artist = artist
+    @name = name 
     if !(@@genres.include?(@genre))
     @@genres << @genre 
     #binding.pry 
     end
   end
-  
-  def name(name) 
-    @name 
-  end
-  
-  def artist(artist)
-    @artist 
-  end
-  
   
   def count 
     @@count
