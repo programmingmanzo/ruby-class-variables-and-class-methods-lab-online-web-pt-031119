@@ -24,12 +24,12 @@ class Song
   
   def self.count  
     @@count
-    binding.pry 
+    #binding.pry 
   end
   
   def self.genres
     @@genres.uniq 
-    binding.pry 
+    #binding.pry 
   end 
   
   def self.genre_count 
@@ -47,10 +47,11 @@ class Song
   
   def self.artists
     @@artists.uniq
+    #binding.pry 
   end
   
   def self.artist_count 
-    binding.pry 
+    #binding.pry 
     artist_count = {}
     @@artists.each do |artist|
       if artist_count[artist]
