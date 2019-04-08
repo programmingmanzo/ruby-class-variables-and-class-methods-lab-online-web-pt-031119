@@ -17,9 +17,14 @@ class Song
     end
   end
   
-  def name 
+  def name(name) 
     @name 
   end
+  
+  def artist(artist)
+    @artist 
+  end
+  
   
   def count 
     @@count
