@@ -6,7 +6,7 @@ class Song
   
   @@count = 0 
   @@genres = [] 
-  @@artist = []
+  @@artists = []
 
 #sets the 3 arguments to instance variable and then those instance variable are placed 
 #in class variables. Also sets a counter to count every time it is initializied  
