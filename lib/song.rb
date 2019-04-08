@@ -2,8 +2,10 @@ require 'pry'
 
 class Song 
   
+  #Sets reader and writer for the 3 instances
   attr_accessor :name, :artist, :genre 
   
+  #setting class variables
   @@count = 0 
   @@genres = [] 
   @@artists = []
@@ -22,10 +24,12 @@ class Song
   
   def self.count  
     @@count
+    binding.pry 
   end
   
   def self.genres
     @@genres.uniq 
+    binding.pry 
   end 
   
   def self.genre_count 
@@ -46,6 +50,7 @@ class Song
   end
   
   def self.artist_count 
+    binding.pry 
     artist_count = {}
     @@artists.each do |artist|
       if artist_count[artist]
