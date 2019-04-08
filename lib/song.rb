@@ -19,12 +19,12 @@ class Song
     end
   end
   
-  def count 
+  def self.count  
     @@count
   end
   
-  def count=(count)
-    
+  def self.genres
+    @@genres.uniq 
   end 
   
 end
